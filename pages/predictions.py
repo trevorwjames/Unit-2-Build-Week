@@ -8,18 +8,30 @@ from dash.dependencies import Input, Output
 # Imports from this application
 from app import app
 
+import dash_core_components as dcc
+
 # 2 column layout. 1st column width = 4/12
 # https://dash-bootstrap-components.opensource.faculty.ai/l/components/layout
 column1 = dbc.Col(
     [
         dcc.Markdown(
-            """
-        
-            ## Predictions
 
-            Your instructions: How to use your app to get new predictions.
 
-            """
+        ),
+
+        dcc.Slider(
+            min=0,
+            max=70,
+            step=1,
+            value=5,
+            marks={0: '0',
+                   10: '10',
+                   20: '20',
+                   30: '30',
+                   40: '40',
+                   50: '50',
+                   60: '60',
+                   70: '70'}
         ),
     ],
     md=4,

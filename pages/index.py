@@ -16,17 +16,17 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
-
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
-
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            ## The War Against Churn
+            
+            If a good customer is one that stays around for a long time and continues to use the product, 
+            then churn is the exact opposite of that. 
+            
+            If we could foresee what makes a customer churn, and delay, or prevent it all together. That would be pretty useful wouldnt it?
+        
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Churn is for butter', color='primary'), href='/predictions')
     ],
     md=4,
 )
