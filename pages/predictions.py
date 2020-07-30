@@ -1,7 +1,7 @@
 # Imports from 3rd party libraries
 
 import dash
-import dash_daq as daq
+
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import dash_core_components as dcc
