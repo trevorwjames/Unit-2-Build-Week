@@ -34,9 +34,34 @@ column1 = dbc.Col(
 
         dcc.Markdown(
             """
+            It seems as though the fun part only lasts for a short amount of time. Once the pipeline has been build, optimized and trained. 
+            The next goal is to understand our results. I used two metric when evaluating my model. \n 
             
+            1. ROC-AUC: this was necessary to obtain the best possible result for the second metric we were looking at
             """
-        )
+        ),
+        html.Img(src='assets/ROC-AUC-curve.png', className='img-fluid'),
+        dcc.Markdown(
+            """
+            2. Recall: The percentage, out of the total predictions, were correctly identified. 
+            """
+        ),
+        html.Img(src='assets/carbon (2).png', className='img-fluid'),
+        dcc.Markdown(
+            """
+            The inclusive nature of recall bodes well for a situation like this. Our goal is to identify as many at risk customers
+            as possible and work to either take care of them, or use their cases in order to better understand the focus of the 
+            business.
+            
+            One of the benefits of using a Logisitic Regression model is the simplicity of it. Refining and tuning our model
+            can be easily done to increase recall even further by altering the threshold. The standard threshold on a Logistic Regression 
+            model is always at 50%, adjusting the tipping point will allow you include or exclude more based on the goal of the 
+            experiement. 
+            
+            Once we had a model we felt we could make predictions with enough of a probability of being correct - The fun stuff begins;
+            predictions! 
+            """
+        ),
     ],
 
 

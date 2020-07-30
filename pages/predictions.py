@@ -142,9 +142,9 @@ layout = dbc.Row([column1, column2, column3])
      Input('lines', 'value'),
      Input('internet_service', 'value'),
      Input('tech_support', 'value'),
-     Input('monthlycharges', 'value'),
      Input('contract', 'value'),
-     Input('paymentmethod', 'value')
+     Input('paymentmethod', 'value'),
+     Input('monthlycharges', 'value')
      ],
  )
 def predict(tenure, MultipleLines, InternetService,
@@ -160,6 +160,7 @@ def predict(tenure, MultipleLines, InternetService,
     )
 
     # run prediciton
-    y_pred = pipeline.predict(df)
+    y_pred = pipeline.predict(df)[0]
 
-    return print('Will this customer Churn?', y_pred)
+    print('Will this customer Churn?', y_pred)
+    return 'Yes' if y_pred else 'No'
