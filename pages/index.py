@@ -26,7 +26,7 @@ column1 = dbc.Col(
 
             """
         ),
-        dcc.Link(dbc.Button('Churn is for butter', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('TO BATTLE!', color='primary'), href='/predictions')
     ],
     md=4,
 )
@@ -35,10 +35,8 @@ gapminder = px.data.gapminder()
 fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
            hover_name="country", log_x=True, size_max=60)
 
-column2 = dbc.Col(
-    [
-        dcc.Graph(figure=fig),
-    ]
+column2 = dbc.Col([html.Img(src='assets/phone-illustration.png', className='img-fluid')],
+                  align='center'
 )
 
 layout = dbc.Row([column1, column2])
