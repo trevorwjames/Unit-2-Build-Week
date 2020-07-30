@@ -16,6 +16,8 @@ column1 = dbc.Col(
             """
         
             ## Process
+            
+            ![My Model in python code](/assets/lin model.png)
 
 
             """
