@@ -7,7 +7,10 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app
-
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
 import dash_core_components as dcc
 
 # 2 column layout. 1st column width = 4/12
@@ -20,6 +23,7 @@ column1 = dbc.Col(
         ),
 
         dcc.Slider(
+            id='tenure-slider',
             min=0,
             max=70,
             step=1,
@@ -44,3 +48,10 @@ column2 = dbc.Col(
 )
 
 layout = dbc.Row([column1, column2])
+
+@app.callback(
+    Output(component_id='my-output', component_property='children'),
+    [Input(component_id='tenure-slider', component_property='value')]
+ )
+def update_output_div(input_value):
+    return 'Output: {}'.format(input_value)
