@@ -58,7 +58,7 @@ column1 = dbc.Col(
             model is always at 50%, adjusting the tipping point will allow you include or exclude more based on the goal of the 
             experiement. 
             
-            Once we had a model we felt we could make predictions with enough of a probability of being correct - The fun stuff begins;
+            Once we had a model we felt we could make predictions with the probability that we desired - The fun stuff begins;
             predictions! 
             """
         ),
