@@ -162,5 +162,4 @@ def predict(tenure, MultipleLines, InternetService,
     # run prediciton
     y_pred = pipeline.predict(df)[0]
 
-    print('Will this customer Churn?', y_pred)
     return 'Yes' if y_pred else 'No'

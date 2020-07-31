@@ -71,7 +71,7 @@ html.Img(src='assets/PIchart.png', className='img-fluid'),
             """
         ),
 
-html.Img(src='assets/pdpinteract.png', className='img-fluid'),
+html.Img(src='assets/pdpinteract.png', className='img-fluid', sizes='small'),
 
         dcc.Markdown(
             """
