@@ -32,7 +32,6 @@ column1 = dbc.Col(
         This means that if churn is "True" the customer will terminate or cancel service.
         If "False" they will remain with the service. The "True" predictions are the ones in which we care about the most.
         Just like feedback, positive is good, although constructive feedback is where we grow!
-         
         
         ## What makes Churn Happen? 
         
