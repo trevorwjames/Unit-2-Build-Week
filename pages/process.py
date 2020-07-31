@@ -34,16 +34,16 @@ column1 = dbc.Col(
 
         dcc.Markdown(
             """
-            It seems as though the fun part only lasts for a short amount of time. Once the pipeline has been build, optimized and trained. 
-            The next goal is to understand our results. I used two metric when evaluating my model. \n 
+            It seems as though the fun part only lasts for a short amount of time. Once the pipeline has been built, optimized and trained. 
+            The next goal is to understand our results. I used two metrics when evaluating my model. \n 
             
-            1. ROC-AUC: this was necessary to obtain the best possible result for the second metric we were looking at
+            1. ROC-AUC: This was necessary to obtain the best possible result for the second metric we were looking at
             """
         ),
         html.Img(src='assets/ROC-AUC-curve.png', className='img-fluid'),
         dcc.Markdown(
             """
-            2. Recall: The percentage, out of the total predictions, were correctly identified. 
+            2. Recall: The percentage, out of the total predictions, that were correctly identified. 
             """
         ),
         html.Img(src='assets/carbon (2).png', className='img-fluid'),
