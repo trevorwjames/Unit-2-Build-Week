@@ -10,7 +10,7 @@ from joblib import load
 import pandas as pd
 
 # Imports from this application
-from app import app
+from app.app import app
 pipeline = load('assets/pipeline.joblib')
 
 # 2 column layout. 1st column width = 4/12

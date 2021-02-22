@@ -6,7 +6,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 # Imports from this application
-from app import app, server
+from app.app import app, server
 from pages import index, predictions, insights, process
 
 # Navbar docs: https://dash-bootstrap-components.opensource.faculty.ai/l/components/navbar
@@ -80,4 +80,4 @@ def display_page(pathname):
 
 # Run app server: https://dash.plot.ly/getting-started
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host='0.0.0.0', port=8050, debug=True)
